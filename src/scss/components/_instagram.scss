@@ -4,7 +4,7 @@
         display: flex;
         justify-content: space-between;
         font-size: 24px;
-        color : #4e4e4e;
+        color : $primaryTextColor;
         margin-bottom: 16px;
         @include mobile(sm){
             a{

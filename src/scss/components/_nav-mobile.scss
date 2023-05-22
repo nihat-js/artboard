@@ -23,5 +23,9 @@
     }
     &__item{
         padding: 10px 12px;
+      
+    }
+    .active {
+        color : $green;
     }
 }

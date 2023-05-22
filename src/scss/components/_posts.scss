@@ -4,7 +4,7 @@
     &__title {
         font-size: 24px;
         text-transform: uppercase;
-        color: #4e4e4e;
+        color: $primaryTextColor;
     }
 
     &__box {
@@ -29,16 +29,25 @@
         display: flex;
         gap: 20px;
         justify-content: flex-start;
-
-        @include mobile("sm") {
+        @include mobile("sm")  {
             flex-direction: column;
+            img {
+
+                max-height: 250px;
+            }
+        }
+        @include mobile("md"){
+            flex-direction: column;
+            img{
+                max-height: 250px;
+            }
         }
 
         &__title {
             font-size: 16px;
             line-height: 28px;
             font-weight: 700;
-            color: #4E4E4E;
+            color: $primaryTextColor;
         }
 
         &__tags {

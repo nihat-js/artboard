@@ -12,16 +12,16 @@
         padding: 10px 14px;
         font-size: 16px;
         font-weight: 400;
-        color: $textColor;
+        color: $primaryTextColor;
         line-height: 22px;
         text-transform: uppercase;
         line-height: 22px;
         &:hover{
-            background: teal;
+            background: $green;
             color : #fff;
         }
     }
     &__item--active{
-        color : #57A4A4
+        color : $green;
     }
 }
