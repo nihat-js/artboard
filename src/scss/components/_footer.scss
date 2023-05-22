@@ -1,0 +1,60 @@
+.footer{
+    background: #000;
+    padding: 30px 10px;
+    &__heading{
+        color : #FEFEFE;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__subheading{
+        color : #B9B9B9;
+        font-weight: 400px;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+    }
+    &__links{
+        padding: 30px 0 ;
+        display: flex;
+        justify-content: center;
+        gap : 10px;
+        .rss{
+            border : 3px solid #F8902E;
+        }
+        .facebook {
+            border : 3px solid #39599F;
+        }
+        .twitter{
+            border : 3px solid #45B0E3;
+        }
+        .dribble{
+            border : 3px solid #D97AB0;
+        }
+        .pinterest{
+            border: 3px solid #CC212C;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 50%;
+            &:hover{
+                border-color: #fff;
+            }
+            cursor: pointer;
+        }
+    }
+    &__about{
+        display: flex;
+        justify-content: center;
+        gap : 12px;
+        color : #B9B9B9;
+        @include mobile("sm"){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.posts {
+    margin-top: 30px;
+
+    &__title {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #4e4e4e;
+    }
+
+    &__box {
+        margin-top: 30px;
+        display: grid;
+        gap: 20px 30px;
+
+        @include mobile("lg") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile("md") {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @include mobile("sm") {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+
+        @include mobile("sm") {
+            flex-direction: column;
+        }
+
+        &__title {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 700;
+            color: #4E4E4E;
+        }
+
+        &__tags {
+            font-size: 12px;
+            line-height: 20px;
+            color: #7C7C7C;
+            display: flex;
+            justify-content: start;
+            gap: 8px;
+
+        }
+
+        &__text {
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #5c5c5c;
+        }
+    }
+
+}

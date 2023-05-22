@@ -1,0 +1,21 @@
+@mixin mobile($size) {
+    @if $size =='lg' {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $size == 'md' {
+        @media (min-width: 768px   ) and (max-width:1200px) {
+            @content;
+        }
+    }
+
+    @else if $size =='sm' {
+        @media (min-width : 320px ) and (max-width:768px) {
+            @content;
+        }
+    }
+
+  
+}
+

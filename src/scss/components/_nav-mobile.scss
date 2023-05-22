@@ -1,0 +1,27 @@
+.nav-mobile {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    @include  mobile("md"){
+        display: none;
+    }
+    @include mobile("lg"){
+        display: none;
+    }
+    &__toggle{
+        width: 48px;
+        padding: 10px;
+        background-color: #000;
+    }
+    &__list {
+        display: block;
+        background-color: #f5f5f5;
+        position: absolute;
+        top : 65px;
+        right : 12px;
+    }
+    &__item{
+        padding: 10px 12px;
+    }
+}

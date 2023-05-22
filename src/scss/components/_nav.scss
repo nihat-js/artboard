@@ -1,0 +1,27 @@
+.nav {
+    padding: 30px 0;
+    @include mobile("sm"){
+        display: none;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        padding: 10px 14px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $textColor;
+        line-height: 22px;
+        text-transform: uppercase;
+        line-height: 22px;
+        &:hover{
+            background: teal;
+            color : #fff;
+        }
+    }
+    &__item--active{
+        color : #57A4A4
+    }
+}
