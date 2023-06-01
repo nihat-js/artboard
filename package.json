@@ -10,5 +10,17 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.62.1"
-  }
+  },
+  "name": "artboard",
+  "version": "1.0.0",
+  "description": "Arboard application",
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev"  : "npx gulp dev",
+    "build" : "npx gulp build"
+  },
+  "author": "",
+  "license": "ISC"
 }
