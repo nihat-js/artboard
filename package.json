@@ -13,7 +13,7 @@
   },
   "name": "artboard",
   "version": "1.0.0",
-  "description": "Arboard application",
+  "description": "Artboard application",
   "main": "gulpfile.js",
   "scripts": {
     "dev"  : "npx gulp dev",
